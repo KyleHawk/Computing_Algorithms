@@ -1,0 +1,20 @@
+Java Map 接口 | 菜鸟教程 菜鸟教程 -- 学的不仅是技术，更是梦想！ 首页 HTML CSS JavaScript jQuery Vue2 Vue3 Bootstrap Python3 Python2 Java C C++ C# Go SQL 本地书签 首页 HTML CSS JS 本地书签 Search Java 教程 Java 教程 Java 简介 Java 开发环境配置 Java 基础语法 Java 对象和类 Java 基本数据类型 Java 变量类型 Java 修饰符 Java 运算符 Java 循环结构 Java 条件语句 Java switch case Java Number & Math 类 Java Character 类 Java String 类 Java StringBuffer Java 数组 Java 日期时间 Java 正则表达式 Java 方法 Java Stream、File、IO Java Scanner 类 Java 异常处理 Java 面向对象 Java 继承 Java Override/Overload Java 多态 Java 抽象类 Java 封装 Java 接口 Java 枚举 Java 包(package) Java 高级教程 Java 数据结构 Java 集合框架 Java ArrayList Java LinkedList Java HashSet Java HashMap Java Iterator Java Object Java 泛型 Java 序列化 Java 网络编程 Java 发送邮件 Java 多线程编程 Java Applet 基础 Java 文档注释 Java 实例 Java 8 新特性 Java MySQL 连接 Java 9 新特性 Java 测验 Java Dictionary 类 Java Hashtable 类 Java Map 接口 Map 接口中键和值一一映射. 可以通过键来获取值。 给定一个键和一个值，你可以将该值存储在一个 Map 对象。之后，你可以通过键来访问对应的值。 当访问的值不存在的时候，方法就会抛出一个 NoSuchElementException 异常。 当对象的类型和 Map 里元素类型不兼容的时候，就会抛出一个 ClassCastException 异常。 当在不允许使用 Null 对象的 Map 中使用 Null 对象，会抛出一个 NullPointerException 异常。 当尝试修改一个只读的 Map 时，会抛出一个 UnsupportedOperationException 异常。 序号 方法描述 1 void clear( ) ?从此映射中移除所有映射关系（可选操作）。 2 boolean containsKey(Object k) 如果此映射包含指定键的映射关系，则返回?true。 3 boolean containsValue(Object v) 如果此映射将一个或多个键映射到指定值，则返回?true。 4 Set entrySet( ) 返回此映射中包含的映射关系的?Set 视图。 5 boolean equals(Object obj) 比较指定的对象与此映射是否相等。 6 Object get(Object k) 返回指定键所映射的值；如果此映射不包含该键的映射关系，则返回?null。 7 int hashCode( ) 返回此映射的哈希码值。 8 boolean isEmpty( ) 如果此映射未包含键-值映射关系，则返回?true。 9 Set keySet( ) 返回此映射中包含的键的?Set 视图。 10 Object put(Object k, Object v) 将指定的值与此映射中的指定键关联（可选操作）。 11 void putAll(Map m) 从指定映射中将所有映射关系复制到此映射中（可选操作）。 12 Object remove(Object k) 如果存在一个键的映射关系，则将其从此映射中移除（可选操作）。 13 int size( ) 返回此映射中的键-值映射关系数。 14 Collection values( ) 返回此映射中包含的值的 Collection 视图。 实例 下面的例子来解释Map的功能 
+import java.util.*;
+
+public class CollectionsDemo {
+
+   public static void main(String[] args) {
+      Map m1 = new HashMap(); 
+      m1.put("Zara", "8");
+      m1.put("Mahnaz", "31");
+      m1.put("Ayan", "12");
+      m1.put("Daisy", "14");
+      System.out.println();
+      System.out.println(" Map Elements");
+      System.out.print("\t" + m1);
+   }
+}
+ 以上实例编译运行结果如下： 
+Map Elements
+        {Mahnaz=31, Ayan=12, Daisy=14, Zara=8}
+ Java Dictionary 类 Java Hashtable 类 点我分享笔记 取消 分享笔记 昵称昵称 (必填) 邮箱邮箱 (必填) 引用地址引用地址 分类导航 HTML / CSS HTML 教程 HTML5 教程 CSS 教程 CSS3 教程 Bootstrap3 教程 Bootstrap4 教程 Font Awesome 教程 Foundation 教程 JavaScript JavaScript 教程 HTML DOM 教程 jQuery 教程 AngularJS 教程 AngularJS2 教程 Vue.js 教程 Vue3 教程 React 教程 TypeScript 教程 jQuery UI 教程 jQuery EasyUI 教程 Node.js 教程 AJAX 教程 JSON 教程 Echarts 教程 Highcharts 教程 Google 地图 教程 服务端 Python 教程 Python2.x 教程 Linux 教程 Docker 教程 Ruby 教程 Java 教程 C 教程 C++ 教程 Perl 教程 Servlet 教程 JSP 教程 Lua 教程 Rust 教程 R 教程 Scala 教程 Go 教程 PHP 教程 Django 教程 Zookeeper 教程 设计模式 正则表达式 Maven 教程 NumPy 教程 Pandas 教程 Matplotlib 教程 Verilog 教程 Verilog 进阶 ASP 教程 AppML 教程 VBScript 教程 数据库 SQL 教程 MySQL 教程 PostgreSQL 教程 SQLite 教程 MongoDB 教程 Redis 教程 Memcached 教程 移动端 Android 教程 Swift 教程 jQuery Mobile 教程 ionic 教程 Kotlin 教程 XML 教程 XML 教程 DTD 教程 XML DOM 教程 XSLT 教程 XPath 教程 XQuery 教程 XLink 教程 XPointer 教程 XML Schema 教程 XSL-FO 教程 SVG 教程 ASP.NET ASP.NET 教程 C# 教程 Web Pages 教程 Razor 教程 MVC 教程 Web Forms 教程 Web Service Web Service 教程 WSDL 教程 SOAP 教程 RSS 教程 RDF 教程 开发工具 Eclipse 教程 Git 教程 Svn 教程 Markdown 教程 网站建设 HTTP 教程 网站建设指南 浏览器信息 网站主机教程 TCP/IP 教程 W3C 教程 网站品质 Advertisement 反馈/建议 在线实例 ·HTML 实例 ·CSS 实例 ·JavaScript 实例 ·Ajax 实例 ·jQuery 实例 ·XML 实例 ·Java 实例 字符集&工具 · HTML 字符集设置 · HTML ASCII 字符集 · HTML ISO-8859-1 · HTML 实体符号 · HTML 拾色器 · JSON 格式化工具 最新更新 · Matplotlib 饼图 · Matplotlib 柱形图 · Matplotlib 散点图 · Matplotlib 绘制... · Matplotlib 网格线 · Matplotlib 轴标... · Matplotlib 绘图线 站点信息 · 意见反馈 · 免责声明 · 关于我们 · 文章归档 关注微信 Copyright ? 2013-2021 菜鸟教程? runoob.com All Rights Reserved. 备案号：闽ICP备15012807号-1 微信关注 用户登录 注册新用户 用户名 密码 记住登录状态 忘记密码？ 邀请码 用户名 邮箱 密码 重复输入密码 如何获取邀请码？ 关闭
